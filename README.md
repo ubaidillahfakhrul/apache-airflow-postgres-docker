@@ -57,3 +57,24 @@ api_key = "YOUR_API_KEY"
 docker-compose up -d
 ```
 
+
+
+
+
+
+
+
+
+
+>
+>
+>
+> ## 📚 Acknowledgements
+> This project was inspired and based on the work from [mdh266](https://github.com/mdh266/AirflowDataPipeline).   
+> The original repository demonstrates an ETL pipeline using Apache Airflow and PostgreSQL to extract weather data from OpenWeatherMap API.
+>
+> 🔗 Original Repository:  
+> [https://github.com/mdh266/AirflowDataPipeline](https://github.com/mdh266/AirflowDataPipeline) 
+>
+> 📚 For a detailed explanation of how the DAG works, you can read the associated blog post from the original author.
+> **Note**: This project is a modified version of the original, with additional features such as Docker support, custom logging, and enhanced error handling.
