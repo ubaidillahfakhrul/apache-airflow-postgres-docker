@@ -77,4 +77,5 @@ docker-compose up -d
 > [https://github.com/mdh266/AirflowDataPipeline](https://github.com/mdh266/AirflowDataPipeline) 
 >
 > 📚 For a detailed explanation of how the DAG works, you can read the associated blog post from the original author.
-> **Note**: This project is a modified version of the original, with additional features such as Docker support, custom logging, and enhanced error handling.
+>
+
