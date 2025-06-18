@@ -1,4 +1,3 @@
-version: "3.7"
 # ====================================== AIRFLOW ENVIRONMENT VARIABLES =======================================
 x-environment: &airflow_environment
   - AIRFLOW__CORE__EXECUTOR=LocalExecutor
@@ -38,7 +37,7 @@ services:
       - "8080:8080"
     volumes:
       - logs:/opt/airflow/logs
-      # - ./data:/opt/airflow/data   # ← Tambahkan di sini
+      # - ./dags/src/data:/opt/airflow/data # ← Tambahkan di sini
     environment: *airflow_environment
     command: webserver
   scheduler:
@@ -49,11 +48,11 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - logs:/opt/airflow/logs
-      # - ./data:/opt/airflow/data   # ← Tambahkan di sini
+      # - ./dags/src/data:/opt/airflow/data # ← Tambahkan di sini
     environment: *airflow_environment
     user: "${AIRFLOW_UID:-50000}:0"
     command: scheduler
 
 volumes:
   logs:
-  pg_data:  # ← definisi volume ditambahkan
+  pg_data: # ← definisi volume ditambahkan
